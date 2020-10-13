@@ -1,7 +1,11 @@
 const cards = document.querySelectorAll('.card');
+const endGame = document.querySelector('.endGame');
+const novoJogo = document.querySelector('.novoJogo');
+
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
+let totalCards = 12;
 
 function flipCard() {
     if(lockBoard) return;
@@ -23,6 +27,12 @@ function flipCard() {
 function checkForMatch() {
     if (firstCard.dataset.card === secondCard.dataset.card) {
         disableCards();
+        totalCards -= 2;
+        console.log(totalCards);
+        if (totalCards === 0) {
+            endGame.style.display = 'flex';
+        }
+
         return;
     }
 
@@ -63,4 +73,6 @@ function resetBoard() {
 cards.forEach((card) => {
     card.addEventListener('click', flipCard);
 })
+
+novoJogo.addEventListener('click', () => location.reload());
 

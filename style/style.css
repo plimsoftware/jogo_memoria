@@ -7,7 +7,37 @@
 body {
     height: 100vh;
     display: flex;
-    background-color: rgb(54, 189, 189);
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('/img/background.jpg');
+    background-size: cover;
+    
+}
+
+.endGame {
+    height: 100vh;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.endGame h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(241, 231, 83);
+    text-shadow: 0 0px 8px #FF0000;
+}
+
+.endGame button{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
 }
 
 .memory-game {
@@ -44,7 +74,7 @@ body {
     padding: 20px;
     position: absolute;
     border-radius: 5px;
-    background: white;
+    background: rgb(189, 199, 228);
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden; /* retira o verso de um elemento */
 }
