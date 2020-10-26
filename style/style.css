@@ -67,6 +67,10 @@ body {
     transition: transform .9s;
 }
 
+
+
+  
+
 .card-front,
 .card-back {
     width: 100%;
@@ -88,3 +92,23 @@ body {
 .card.flip {
     transform: rotateY(180deg);
 }
+
+@media screen and (max-width: 800px) {
+    .memory-game {
+        height: 85vh;
+        width: 75vw;
+    }  
+
+  }
+
+  @media screen and (max-width: 400px) {
+    .memory-game {
+        height: 65vh;
+        width: 90vw;
+    }  
+
+    .card {
+        height: calc(33.333% - 10px);
+    }
+
+  }
