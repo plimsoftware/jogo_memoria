@@ -1,5 +1,3 @@
-import * as serviceWorker from '../serviceWorker';
-
 const cards = document.querySelectorAll('.card');
 const endGame = document.querySelector('.endGame');
 const novoJogo = document.querySelector('.novoJogo');
@@ -147,4 +145,3 @@ novoJogo.addEventListener('click', () => {
   endGame.style.display = 'none';
 });
 
-serviceWorker.register();
