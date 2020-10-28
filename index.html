@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" type="image/ico" href="./favicon.ico">
 </head>
-<body>
+<body class="mybody">
     <header class="endGame">
         <h1>Parabéns conseguiu!!</h1>
         <button type="button" class="novoJogo">Novo Jogo</button>
@@ -116,9 +116,9 @@
         <div class="options">
             <h1>Opções</h1>
             <div class="options-menu">
-                <button class="b1" type="button">4X3</button>
-                <button class="b1" type="button">6X3</button>
-                <button class="b1" type="button">6X4</button>
+                <button class="b1" type="button" >4X3</button>
+                <button class="b1" type="button" disabled>6X3</button>
+                <button class="b1" type="button" disabled>6X4</button>
             </div>
             <div class="options-menu">
                 <button id="mariotheme" class="b2" type="button">
@@ -130,6 +130,9 @@
             </div>
         </div>
     </aside>
+    <div class="options-button">
+        <button class="optionButton" type="button">Opções</button>
+    </div>
     <script src="./js/script.js"></script>   
 </body>
 </html>
