@@ -195,9 +195,9 @@ body {
         margin-top: 0px;
     }
 
-  }
+}
 
-  @media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .memory-game {
         height: 65vh;
         width: 90vw;
