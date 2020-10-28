@@ -1,9 +1,9 @@
 {
     "name": "Jogo da Memoria",
-    "short_name": "JogoDaMemoria",
+    "short_name": "Jogo da Memoria",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#fdfdfd",
+    "background_color": "#3333cc",
     "theme_color": "#db4938",
     "orientation": "portrait-primary",
     "description": "Jogo da memoria com Patrulha Pata e Super Mario",

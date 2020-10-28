@@ -185,7 +185,7 @@ body {
     transform: rotateY(180deg);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .memory-game {
         height: 85vh;
         width: 75vw;
@@ -197,7 +197,7 @@ body {
 
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 450px) {
     .memory-game {
         height: 65vh;
         width: 90vw;

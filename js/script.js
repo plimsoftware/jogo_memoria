@@ -144,4 +144,3 @@ novoJogo.addEventListener('click', () => {
   restartGame();
   endGame.style.display = 'none';
 });
-

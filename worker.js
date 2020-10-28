@@ -1,4 +1,4 @@
-var CACHE_NAME = 'covid19-pwa';
+var CACHE_NAME = 'jogomemoria-pwa';
 var urlsToCache = [
   '/'
 ];
