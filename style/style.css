@@ -9,6 +9,7 @@ body {
     display: flex;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../img/background.jpg');
     background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
@@ -20,7 +21,6 @@ body {
     position: fixed;
     background-color: rgba(0,0,0,.7);
     z-index: 1;
-
     justify-content: center;
     align-items: center;
 }
@@ -28,9 +28,9 @@ body {
 .endGame h1{
     font-size: 60px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     color: rgb(241, 231, 83);
     text-shadow: 0 0px 8px #FF0000;
+    margin-bottom: 10px;
 }
 
 .endGame button{
@@ -38,6 +38,75 @@ body {
     height: 30px;
     border-radius: 10px;
     border: none;
+}
+
+.options-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    height: 50vh;
+    width: 40%;
+    min-width: 300px;
+    min-height: 290px;
+    padding: 20px;
+    display: flex;
+    border: 2px solid rgb(44, 44, 114);
+    box-shadow: 5px 5px rgb(38, 2, 97);
+    border-radius: 20px;
+    flex-direction: column;
+    position: relative;
+    background-color: #533799;
+    z-index: 1;
+    justify-content: start;
+    align-items: center;
+}
+
+.options h1 {
+    color: rgb(165, 16, 16);
+    text-shadow: 1px 1px 3px yellow;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.options-menu {
+    margin-top: 40px;
+    flex-direction: row;
+}
+
+.options-menu .b1 {
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 5px;
+    background-color: rgb(10, 10, 134);
+    color: yellow;
+}
+
+.options-menu .b2 {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 5px;
+    background-color: rgb(10, 10, 134);
+    color: yellow;
+}
+
+.options .b2 img {
+    width: 50px;
+    height: 50px;
 }
 
 .memory-game {
@@ -48,6 +117,10 @@ body {
     flex-wrap: wrap;
     perspective: 1000px;
 
+}
+
+#pawpatrolthemeGame {
+    display: none;
 }
 
 .card:active {
@@ -111,4 +184,7 @@ body {
         height: calc(33.333% - 10px);
     }
 
+    .endGame h1{
+        font-size: 40px;
+    }
   }

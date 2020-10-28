@@ -1,11 +1,48 @@
 const cards = document.querySelectorAll('.card');
 const endGame = document.querySelector('.endGame');
 const novoJogo = document.querySelector('.novoJogo');
+const optionsWrapper = document.querySelector('.options-wrapper');
+const options = document.querySelector('.options');
+const buttonTheme = document.querySelectorAll('.b2');
+const pawPatrolThemeGame = document.getElementById('pawpatrolthemeGame');
+const marioThemeGame = document.getElementById('mariothemeGame');
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
 let totalCards = 12;
+let gameTheme = 'mariotheme';
+
+// Options
+optionsWrapper.addEventListener('click', clickOptionsWrapper);
+options.addEventListener('click', clickOptions);
+
+buttonTheme.forEach((button) => {
+    button.addEventListener('click', changeTheme);
+})
+
+function clickOptionsWrapper() {
+    optionsWrapper.style.display = 'none';
+}
+
+function clickOptions(event) {
+    event.stopPropagation();;
+}
+
+function changeTheme(event) {
+    gameTheme = event.currentTarget.id;
+
+    if (gameTheme === 'mariotheme') {
+        marioThemeGame.style.display = 'flex';
+        pawPatrolThemeGame.style.display = 'none';
+    } else {
+        marioThemeGame.style.display = 'none';
+        pawPatrolThemeGame.style.display = 'flex';
+    }
+    optionsWrapper.style.display = 'none';
+
+
+}
 
 function flipCard() {
     if(lockBoard) return;
